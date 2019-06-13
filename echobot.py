@@ -9,3 +9,6 @@ responses = {
 patterns = {
     
 }
+
+def swap_pronoun(phrase):
+    
