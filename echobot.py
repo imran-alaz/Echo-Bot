@@ -2,13 +2,21 @@ import time
 import random
 import re
 
-responses = {
-    "Hello": ["Hello", "Good day!"]
-}
+import json
 
-patterns = {
-    
-}
+responses = {}
+patterns = {}
 
-def swap_pronoun(phrase):
-    
+def start():
+    load_json()
+
+
+def load_json():
+    with open('responses.json') as out:
+        data = json.load(out)
+        global responses
+        global patterns
+        responses = data["responses"]
+        patterns = data["patterns"]
+
+start()
