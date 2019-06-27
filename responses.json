@@ -1,9 +1,12 @@
 {
     "responses": [{
-        "question": "Blah",
-        "response": "Bleh!"
+        "questions": [ "Wat is jouw naam?", "Jouw naam", "Wat is jou naam"],
+        "response": "John"
     }],
     "patterns": [
 
+    ],
+    "random responses": [
+        "Voel je je wel goed?", "Hoe gaat het?"
     ]
 }
