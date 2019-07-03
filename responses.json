@@ -1,12 +1,20 @@
 {
     "responses": [{
-        "questions": [ "Wat is jouw naam?", "Jouw naam", "Wat is jou naam"],
-        "response": "John"
-    }],
+            "keywords": ["naam", "jouw"],
+            "response": "Mijn naam? E.C.H.O!"
+        },
+        {
+            "keywords": ["alarmnummer", "zelfmoord"],
+            "response": "Het alarmnummer voor zelfmoord is 113"
+        }
+    ],
     "patterns": [
-
+        {
+            "pattern": "Ik voel me (.*)",
+            "response": "Waarom voel je je {}?"
+        }
     ],
     "random responses": [
-        "Voel je je wel goed?", "Hoe gaat het?"
+        "Voel je je wel goed?", "Hoe gaat het?", "Kan ik je ergens mee helpen?", "Vergeet niet, aan het eind van de tunnel is er altijd licht!", "Ik weet niet zo goed hoe ik daar op moet antwoorden ..."
     ]
 }

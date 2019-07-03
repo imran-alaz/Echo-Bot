@@ -12,6 +12,20 @@ random_responses = {}
 
 name = ""
 
+def pattern(phrase):
+        for pattern in patterns:
+                match = re.match(pattern['pattern'].lower(), phrase.lower())
+                if match:
+                        return pattern['response'].format(match.group(1))
+def swap_pronouns(phrase):
+        if 'I' in phrase:
+                return re.sub('I', 'your', phrase)
+        if 'my' in phrase:
+                return  re.sub('my', 'your', phrase)
+        else: 
+                return phrase
+
+
 def start():
     load_json()
     global name
@@ -33,10 +47,17 @@ def listen():
 
 def get_reply(question):
     global responses
+    if pattern(question):
+            if swap_pronouns(pattern(question)):
+                    return pattern(question)
+            return pattern(question)
+
     for response in responses:
-        for quest in response['questions']:
-            if (str(quest)).lower() == str(question).lower():
-                return response['response']
+            for keyword in response['keywords']:
+                    if keyword in question.lower():
+                            if swap_pronouns(response['response']):
+                                    return swap_pronouns(response['response'])
+                            return response['response']
 
 def print_user_and_bot(user, bot, message, bot_reply):
     print("{}: {}".format(user, message))
