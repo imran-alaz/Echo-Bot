@@ -25,7 +25,7 @@ def swap_pronouns(phrase):
         if 'my ' in phrase:
                 return  re.sub('my', 'you', re.sub('my', 'you', phrase))
         else: 
-                return phrase
+                return None
 
 
 def start():
