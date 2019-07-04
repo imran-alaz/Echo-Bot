@@ -18,6 +18,8 @@ def pattern(phrase):
                 if match:
                         return random.choice(pattern['responses']).format(match.group(1))
 def swap_pronouns(phrase):
+        if phrase.endswith("?"):
+                return phrase
         if 'I ' in phrase:
                 return re.sub('am', 'are', re.sub('I', 'you', phrase))
         if 'my ' in phrase:
@@ -58,14 +60,15 @@ def get_reply(question):
                             return swap_pronouns(response['response'])
                     else:
                             return response['response']
+    if swap_pronouns(question):
+        return swap_pronouns(question)
+
         #     for  in response['keywords']:
         #             if keyword in question.lower():
         #                     if keywordAmount == len(response['keywords']):
         #                         if swap_pronouns(response['response']):
         #                                 return swap_pronouns(response['response'])
         #                         return response['response']
-#     if swap_pronouns(question):
-#            return swap_pronouns(question)
 
 def print_user_and_bot(user, bot, message, bot_reply):
     print("{}: {}".format(user, message))
