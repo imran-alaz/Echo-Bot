@@ -42,6 +42,14 @@
         {
             "question": "what is the weather",
             "response": "today it is 18 celsius"
+        },
+        {
+            "question": "What is youre favorite song?",
+            "response": "Het is een nacht from Guus Meeuwis"
+        },
+        {
+            "question": "Do you have tips for happiness",
+            "response": "1. Go sport! 2. Listen to your favorite music! 3. Eat healthy"
         }
     ],
     "patterns": [{
