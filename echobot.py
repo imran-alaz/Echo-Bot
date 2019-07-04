@@ -16,7 +16,7 @@ def pattern(phrase):
         for pattern in patterns:
                 match = re.match(pattern['pattern'].lower(), phrase.lower())
                 if match:
-                        return random.choice(pattern['responses']).format(match.group(1))
+                        return random.choice(pattern['responses']).format(match.group(1).replace("!", "").replace("?", ""))
 def swap_pronouns(phrase):
         if phrase.endswith("?"):
                 return phrase
