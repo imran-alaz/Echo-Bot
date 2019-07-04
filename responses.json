@@ -1,7 +1,7 @@
 {
     "responses": [{
             "question": "What is your name",
-            "response": "My name? E.L.I.Z.A"
+            "response": "My name? E.C.H.O"
         },
         {
             "question": "What is the alarm line for suicide",
@@ -50,6 +50,14 @@
         {
             "question": "Do you have tips for happiness",
             "response": "1. Go sport! 2. Listen to your favorite music! 3. Eat healthy"
+        },
+        {
+            "question": "Hello",
+            "response": "Hi! How are you feeling?"
+        },
+        {
+            "question": "Who are you",
+            "response": "I am ECHO?"
         }
     ],
     "patterns": [{
