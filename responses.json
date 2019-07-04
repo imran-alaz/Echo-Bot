@@ -1,17 +1,25 @@
 {
     "responses": [{
-            "keywords": ["naam", "jouw"],
-            "response": "Mijn naam? E.C.H.O!"
+            "question": "What is your name",
+            "response": "My name? E.C.H.O!"
         },
         {
-            "keywords": ["alarmnummer", "zelfmoord"],
-            "response": "Het alarmnummer voor zelfmoord is 113"
+            "question": "What is the alarm line for suicide",
+            "response": "The suicide line is 113"
+        },
+        {
+            "question": "How are you",
+            "response": "I'm fine, and you?"
+        },
+        {
+            "question": "Do you speak zimbabwe",
+            "response": "good morning zimbabwe"
         }
     ],
     "patterns": [
         {
-            "pattern": "Ik voel me (.*)",
-            "response": "Waarom voel je je {}?"
+            "pattern": "I feel (.*)",
+            "responses": ["Why do you feel {}?", "Why do you think you feel {}?"]
         }
     ],
     "random responses": [
