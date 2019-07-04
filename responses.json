@@ -1,7 +1,7 @@
 {
     "responses": [{
             "question": "What is your name",
-            "response": "My name? E.L.I.Z.A
+            "response": "My name? E.L.I.Z.A"
         },
         {
             "question": "What is the alarm line for suicide",
@@ -32,44 +32,22 @@
             "response": "you should call the kindertelefoon for advice, the number is 0800-0432"
         },
         {
-            "question": "I am unhappy, but don't know what to do. What should I do?,
+            "question": "I am unhappy, but don't know what to do. What should I do?",
             "response": "You should talk to someone you trust"
         },
         {
             "question": "I am feeling great!",
-            "response": "That is very good to hear",
+            "response": "That is very good to hear"
         },
-	{
-            "question": "",
+        {
+            "question": "what is the weather",
             "response": "today it is 18 celsius"
         }
-     
     ],
-    "patterns": [
-        {
-            "pattern": "I feel (.*)",
-            "responses": ["Why do you feel {}?", "Why do you think you feel {}?"]
-        },
-        {
-            Je vraagt of ik zin heb in een sigaret
-Het is twee uur 's nachts, we liggen op bed
-In een hotel in een stad, waar niemand ons hoort
-Waar niemand ons kent en niemand ons stoort
-Op de vloer ligt een lege fles wijn
-En kledingstukken die van jou of mij kunnen zijn
-Een schemering, de radio zacht en deze nacht heeft alles
-Wat ik van een nacht verwacht
-Het is een nacht, die je normaal alleen in films ziet
-Het is een nacht, die wordt bezongen in het mooiste lied
-Het is een nacht waarvan ik dacht dat ik hem nooit beleven zou
-Maar vannacht beleef ik hem met jou
-Ik ben nog wakker en staar naar het plafond
-En denk aan hoe de dag lang geleden begon
-Het zomaar er vandoor gaan met jou
-Niet wetend waar de reis eindigen zou
-Nu lig ik hier in een wildvreemde stad
-        }
-    ],
+    "patterns": [{
+        "pattern": "I feel (.*)",
+        "responses": ["Why do you feel {}?", "Why do you think you feel {}?"]
+    }],
     "random responses": [
         "Sadly, I'm limited by our period's technology.. I can't answer your question", "I will grow in the future and *be* SkyNet"
     ]
